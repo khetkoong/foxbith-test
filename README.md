@@ -4,4 +4,5 @@
 - npm run dev
 
 url: localhost:3000
-หรือ https://foxbith-questionare.netlify.app/
+
+หรือ deploy url: https://foxbith-questionare.netlify.app/
