@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import Button from "@material-ui/core/Button";
+
 import AddQuestion from "../components/AddQuestion";
 import QuestionDetail from "../components/QuestionDetail";
+import Header from "../components/Header";
 import Grid from "@material-ui/core/Grid";
 import TextField from "@material-ui/core/TextField";
 import Line from "../components/Line";
@@ -100,42 +101,7 @@ const Home = () => {
     <AppContext.Provider value={valuesContext}>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div style={{ backgroundColor: "white" }} className="mb-20">
-          <div className="p-10-nb">
-            <div style={{ display: "grid" }}>
-              <label className="text-title">FoxBith Questionare</label>
-              <div
-                style={{
-                  height: "1px",
-                  backgroundColor: "#C2C9D1",
-                  margin: "5px 0px 5px 0px",
-                }}
-              ></div>
-              <div className="item-end p-5">
-                <Button
-                  variant="outlined"
-                  color="secondary"
-                  style={{ marginRight: 5 }}
-                >
-                  Cancel
-                </Button>
-                <Button
-                  type="submit"
-                  variant="contained"
-                  color="secondary"
-                  style={{ padding: "7px 50px 7px 50px" }}
-                >
-                  Save
-                </Button>
-              </div>
-            </div>
-            <div
-              style={{
-                height: "1px",
-                backgroundColor: "#C2C9D1",
-                margin: "5px 0px 5px 0px",
-              }}
-            ></div>
-          </div>
+          <Header />
         </div>
         <div className="m-20 question-detail-box">
           {/* <ul> */}{" "}

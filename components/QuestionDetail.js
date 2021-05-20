@@ -21,7 +21,7 @@ const QuestionDetail = (props) => {
     name: `questions.${index}.choiceQuestion`,
   });
 
-  const addChoice = (index, indexChoice) => {
+  const addChoice = () => {
     append({
       choiceTitle: "",
       checked: false,
@@ -70,7 +70,7 @@ const QuestionDetail = (props) => {
             ))}
         </div>
         <div className="mb-20 mt-20">
-          <label className="text-add-choice" onClick={() => addChoice(index)}>
+          <label className="text-add-choice" onClick={() => addChoice()}>
             + ADD CHOICE
           </label>
         </div>
